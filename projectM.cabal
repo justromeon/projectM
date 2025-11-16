@@ -23,7 +23,8 @@ library
     exposed-modules:
         Project,
         Demo,
-        Database
+        Database,
+        Reporting
     build-depends:
         base,
         text,
