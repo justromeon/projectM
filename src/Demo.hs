@@ -4,6 +4,7 @@ module Demo where
 
 import Project
 import Reporting
+import PrettyPrint
 
 someProject :: Project
 someProject = GroupProject "Central Luzon" [tarlac, pampanga, nuevaEcija]
@@ -16,3 +17,9 @@ someProject = GroupProject "Central Luzon" [tarlac, pampanga, nuevaEcija]
 
 sampleReport :: IO Report
 sampleReport = calculateProjectReport someProject
+
+samplePrettyProject :: String
+samplePrettyProject = prettyProject someProject
+
+samplePrettyReport :: IO String
+samplePrettyReport = prettyReport <$> sampleReport
