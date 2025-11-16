@@ -20,8 +20,11 @@ executable projectM
 
 library
     import:           warnings
-    exposed-modules:  Domain
-    build-depends:    base
+    exposed-modules:
+        Project
+    build-depends:
+        base,
+        text
     hs-source-dirs:   src
     default-language: Haskell2010
 
