@@ -21,7 +21,8 @@ executable projectM
 library
     import:           warnings
     exposed-modules:
-        Project
+        Project,
+        Demo
     build-depends:
         base,
         text
