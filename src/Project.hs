@@ -13,7 +13,7 @@ newtype ProjectId = ProjectId
   } deriving (Show, Eq, Num)
 
 data Project
-  = SingleProject ProjectId
+  = SingleProject ProjectId Text
   | GroupProject Text [Project]
   deriving (Show, Eq)
 
